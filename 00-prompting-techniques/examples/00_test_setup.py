@@ -9,7 +9,10 @@ from helper import get_completion
 prompt = """
 Summarize the following in one simple sentence:
 
-Prompt engineering helps us write clear instructions for AI models.
+Rohit Sharma is one of India's greatest opening batsmen who holds the record 
+for the highest individual score in ODI cricket, has led the Indian team to 
+multiple tournament victories, and is known for his elegant batting style 
+and ability to perform under pressure in big matches.
 """
 
 response = get_completion(prompt)

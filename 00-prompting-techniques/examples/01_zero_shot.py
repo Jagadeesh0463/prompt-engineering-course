@@ -1,6 +1,6 @@
 """
-Module 01 — Prompting Guidelines
-Example: Zero-shot prompting
+Module 01 — Zero-shot Prompting
+Task: Generate creative ideas (Cricket domain)
 """
 
 import sys
@@ -11,13 +11,13 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from helper import get_completion
 
+# Zero-shot prompt (no examples, single clear task)
 prompt = """
-Summarize the following paragraph in 5 simple bullet points for a beginner:
+Summarize the following cricket match report into 4 simple bullet points:
 
-Artificial Intelligence is transforming industries by automating repetitive work,
-improving decision-making, and enabling personalized experiences.
-Businesses use AI in customer support, fraud detection, marketing, healthcare, and logistics.
-However, successful AI adoption requires good data, clear goals, and responsible implementation.
+India scored 285 runs batting first. Virat Kohli scored 120 runs.
+Australia started strong but lost quick wickets in middle overs.
+Indian bowlers maintained pressure and won the match by 35 runs.
 """
 
 response = get_completion(prompt)

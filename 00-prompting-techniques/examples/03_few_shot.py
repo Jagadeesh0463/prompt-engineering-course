@@ -1,3 +1,7 @@
+"""
+Module 03 — Few-shot Prompting
+Task: Classify cricket-related sentiment
+"""
 import sys
 from pathlib import Path
 
@@ -7,18 +11,21 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 from helper import get_completion
 
 prompt = """
-Classify the sentiment as Positive, Negative, or Neutral.
+Classify the sentiment of the cricket comment as Positive, Negative, or Neutral.
 
-Sentence: The product quality is excellent and delivery was fast.
+Comment: What an outstanding innings by the captain, pure class!
 Sentiment: Positive
 
-Sentence: The app keeps crashing every time I open it.
+Comment: The team played very poorly today, disappointing performance.
 Sentiment: Negative
 
-Sentence: The package arrived yesterday afternoon.
+Comment: The match will start at 7 PM IST.
 Sentiment: Neutral
 
-Sentence: The course content is useful, but the audio quality is poor.
+Comment: Rohit Sharma scored a brilliant century in the final over.
+Sentiment: Positive
+
+Comment: The batting was strong, but the bowling performance was disappointing.
 Sentiment:
 """
 
@@ -27,7 +34,6 @@ response = get_completion(prompt)
 print("Prompt:")
 print("-" * 50)
 print(prompt)
-
 print("\nResponse:")
 print("-" * 50)
 print(response)

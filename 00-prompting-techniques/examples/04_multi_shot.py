@@ -1,3 +1,7 @@
+"""
+Module 04 — Multi-shot Prompting
+Task: Tag cricket news headlines with a category label
+"""
 import sys
 from pathlib import Path
 
@@ -7,26 +11,32 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 from helper import get_completion
 
 prompt = """
-Tag each message with one label only:
-Billing, Technical Issue, Delivery, Account Access
+Tag each cricket headline with one label only:
+Performance, Injury, Selection, Record, Controversy
 
-Message: I was charged twice for the same subscription.
-Label: Billing
+Headline: Virat Kohli scores a brilliant century in the third Test match.
+Label: Performance
 
-Message: My order still has not arrived.
-Label: Delivery
+Headline: Jasprit Bumrah ruled out of the series due to a back injury.
+Label: Injury
 
-Message: I cannot reset my password.
-Label: Account Access
+Headline: BCCI announces squad for the upcoming T20 World Cup.
+Label: Selection
 
-Message: The application freezes after login.
-Label: Technical Issue
+Headline: Rohit Sharma becomes the highest run-scorer in T20 internationals.
+Label: Record
 
-Message: I am unable to download the invoice.
-Label: Billing
+Headline: Match referee penalises team for slow over rate during the final.
+Label: Controversy
+
+Headline: Hardik Pandya returns to the squad after recovering from ankle surgery.
+Label: Selection
+
+Headline: Shubman Gill hits three consecutive half-centuries in the ODI series.
+Label: Performance
 
 Now tag this:
-Message: The website keeps showing an error when I try to sign in.
+Headline: Ravindra Jadeja breaks the record for most catches by a fielder in Tests.
 Label:
 """
 
@@ -35,7 +45,6 @@ response = get_completion(prompt)
 print("Prompt:")
 print("-" * 50)
 print(prompt)
-
 print("\nResponse:")
 print("-" * 50)
 print(response)
