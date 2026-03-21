@@ -1,28 +1,14 @@
-# 01 — Zero-shot Prompting
+# Module 01 — Zero-shot Prompting
 
-## What it means
+## Task
+Summarization (Cricket)
 
-Zero-shot prompting means asking the model to perform a task without giving any example.
+## Prompt
+Summarize the following cricket match report into 4 simple bullet points:
 
-## Why it is called zero-shot
+India scored 285 runs batting first. Virat Kohli scored 120 runs.
+Australia started strong but lost quick wickets in middle overs.
+Indian bowlers maintained pressure and won the match by 35 runs.
 
-The word "shot" means example.
-
-- Zero-shot = no examples
-- One-shot = one example
-- Few-shot = a few examples
-
-## When to use it
-
-Use zero-shot when:
-- the task is simple
-- the instruction is clear
-- no example is needed to understand the task
-
-## Demo task
-
-Summarize a cricket match report into simple bullet points without using any example.
-
-## Key idea
-
-A clear instruction alone is enough for the model to understand and complete the task.
+## Why this is Zero-shot
+This prompt gives a clear instruction without providing any examples.

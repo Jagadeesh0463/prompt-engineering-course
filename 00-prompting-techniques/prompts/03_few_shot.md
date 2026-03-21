@@ -1,29 +1,25 @@
-# 03 — Few-shot Prompting
+# Module 03 — Few-shot Prompting
 
-## What it means
+## Task
+Sentiment Classification (Cricket)
 
-Few-shot prompting means giving the model a few examples before asking it to perform the actual task.
+## Prompt
+Classify the sentiment of the cricket comment as Positive, Negative, or Neutral.
 
-## Why it is called few-shot
+Comment: What an outstanding innings by the captain, pure class!
+Sentiment: Positive
 
-The word "shot" means example.
+Comment: The team played very poorly today, disappointing performance.
+Sentiment: Negative
 
-- Zero-shot = no examples
-- One-shot = one example
-- Few-shot = a few examples
+Comment: The match will start at 7 PM IST.
+Sentiment: Neutral
 
-## When to use it
+Comment: Rohit Sharma scored a brilliant century in the final over.
+Sentiment: Positive
 
-Use few-shot when:
-- consistency matters
-- output format matters
-- one example is not enough
-- the task can be misunderstood without pattern guidance
+Comment: The batting was strong, but the bowling performance was disappointing.
+Sentiment:
 
-## Demo task
-
-Classify sentence sentiment using multiple labeled examples.
-
-## Key idea
-
-A few good examples help the model follow the pattern more reliably.
+## Why this is Few-shot
+This prompt provides multiple consistent examples before asking the model to classify a new input.

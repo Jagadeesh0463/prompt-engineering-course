@@ -1,29 +1,27 @@
-# 06 — Zero-shot Chain-of-Thought Prompting
+# Module 06 — Zero-shot Chain-of-Thought Prompting
 
-## What it means
+## Task
+Cricket Academy Financial Planning
 
-Zero-shot Chain-of-Thought prompting means asking the model to reason step by step without giving any example first.
+## Prompt
+Ravi is a cricket coach running a small academy in Hyderabad.
 
-## Why it is called zero-shot CoT
+He earns ₹95,000 per month.
 
-- Zero-shot = no examples
-- Chain-of-Thought = step-by-step reasoning
+Expenses:
+- Ground rent: ₹15,000
+- Equipment maintenance: ₹8,000
+- Staff salary: ₹22,000
+- Personal expenses: ₹18,000
 
-So zero-shot CoT means:
-no examples, but step-by-step reasoning is requested.
+He wants to save ₹2,40,000 for a bowling machine.
 
-## When to use it
+Solve step by step:
+1. Total monthly expenses
+2. Monthly savings
+3. Time required to reach the goal
+4. Time required with extra 10 students paying ₹2,000 each
+5. One suggestion to achieve the goal faster
 
-Use zero-shot CoT when:
-- the task involves reasoning
-- the problem has multiple steps
-- you do not want to prepare examples
-- you want a more thoughtful answer than plain zero-shot
-
-## Demo task
-
-Solve a savings problem step by step and give one practical suggestion.
-
-## Key idea
-
-Even without examples, asking for step-by-step reasoning can help the model give a more structured answer.
+## Why this is Zero-shot Chain-of-Thought
+This prompt does not provide examples but encourages reasoning by asking the model to solve the problem step by step.

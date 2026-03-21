@@ -1,21 +1,24 @@
-# 05 — Chain-of-Thought Prompting
+# Module 05 — Chain-of-Thought Prompting
 
-## What it means
+## Task
+Cricket Tournament Cost Calculation
 
-Chain-of-thought prompting means asking the model to think through a problem step by step before giving the final answer.
+## Prompt
+A local cricket club is planning a 3-day tournament.
 
-## When to use it
+- Number of teams: 8
+- Registration fee per team: ₹5,000
+- Ground booking cost per day: ₹8,000
+- Umpire charges for the full tournament: ₹6,000
+- Equipment and miscellaneous cost: ₹4,500
+- Sponsorship received: ₹20,000
 
-Use chain-of-thought when:
-- the task involves logic
-- the task has multiple steps
-- you want a reasoned answer, not just a final result
-- the model may otherwise answer too quickly
+Think through the problem step by step and calculate:
+1. Total income (registration fees + sponsorship)
+2. Total expenses (ground + umpire + equipment)
+3. Net profit or loss
+4. If the club wants a minimum profit of ₹10,000, how much should they increase the registration fee per team?
+5. One suggestion to reduce costs for the next tournament
 
-## Demo task
-
-Solve a small business calculation problem step by step and then suggest one improvement.
-
-## Key idea
-
-Breaking the reasoning into steps can improve clarity and reduce mistakes in multi-step tasks.
+## Why this is Chain-of-Thought
+This prompt explicitly asks the model to think step by step and explain its reasoning.

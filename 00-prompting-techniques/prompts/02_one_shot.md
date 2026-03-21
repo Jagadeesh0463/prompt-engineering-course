@@ -1,28 +1,18 @@
-# 02 — One-shot Prompting
+# Module 02 — One-shot Prompting
 
-## What it means
+## Task
+Tone Conversion (Cricket Commentary)
 
-One-shot prompting means giving the model one example before asking it to perform the actual task.
+## Prompt
+Convert the cricket commentary into a professional and formal tone.
 
-## Why it is called one-shot
+Example:
+Input: What a crazy six! The batsman is destroying the bowlers!
+Output: That was an exceptional shot. The batsman is performing remarkably well against the bowlers.
 
-The word "shot" means example.
+Now do the same for:
+Input: This bowler is getting smashed everywhere, no control at all!
+Output:
 
-- Zero-shot = no examples
-- One-shot = one example
-- Few-shot = a few examples
-
-## When to use it
-
-Use one-shot when:
-- the task is simple
-- the style matters
-- one example is enough to show the pattern
-
-## Demo task
-
-Convert an informal sentence into a professional business tone using one example.
-
-## Key idea
-
-One good example can help the model understand the expected tone or format more clearly.
+## Why this is One-shot
+This prompt provides exactly one example and then asks the model to perform the same task on a new input.

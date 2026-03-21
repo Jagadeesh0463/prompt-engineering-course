@@ -1,29 +1,36 @@
-# 04 — Multi-shot Prompting
+# Module 04 — Multi-shot Prompting
 
-## What it means
+## Task
+Category Tagging (Cricket Headlines)
 
-Multi-shot prompting means giving the model several examples before asking it to perform the actual task.
+## Prompt
+Tag each cricket headline with one label only:
+Performance, Injury, Selection, Record, Controversy
 
-## How it is different from few-shot
+Headline: Virat Kohli scores a brilliant century in the third Test match.
+Label: Performance
 
-Few-shot and multi-shot are very closely related.
+Headline: Jasprit Bumrah ruled out of the series due to a back injury.
+Label: Injury
 
-A simple way to understand it:
-- Few-shot = a few examples
-- Multi-shot = more examples for stronger pattern control
+Headline: BCCI announces squad for the upcoming T20 World Cup.
+Label: Selection
 
-## When to use it
+Headline: Rohit Sharma becomes the highest run-scorer in T20 internationals.
+Label: Record
 
-Use multi-shot when:
-- the task has many possible variations
-- labels may overlap
-- consistency is very important
-- the model needs stronger guidance
+Headline: Match referee penalises team for slow over rate during the final.
+Label: Controversy
 
-## Demo task
+Headline: Hardik Pandya returns to the squad after recovering from ankle surgery.
+Label: Selection
 
-Tag customer support messages using multiple labeled examples.
+Headline: Shubman Gill hits three consecutive half-centuries in the ODI series.
+Label: Performance
 
-## Key idea
+Now tag this:
+Headline: Ravindra Jadeja breaks the record for most catches by a fielder in Tests.
+Label:
 
-More examples can improve consistency when the task is slightly tricky.
+## Why this is Multi-shot
+This prompt provides multiple examples across categories to guide the model before asking it to classify a new headline.
