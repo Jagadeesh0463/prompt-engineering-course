@@ -3,6 +3,9 @@
 ## Task
 Category Tagging (Cricket Headlines)
 
+## Why this is Multi-shot
+This prompt provides multiple examples across categories to guide the model before asking it to classify a new headline.
+
 ## Prompt
 Tag each cricket headline with one label only:
 Performance, Injury, Selection, Record, Controversy
@@ -32,5 +35,5 @@ Now tag this:
 Headline: Ravindra Jadeja breaks the record for most catches by a fielder in Tests.
 Label:
 
-## Why this is Multi-shot
-This prompt provides multiple examples across categories to guide the model before asking it to classify a new headline.
+## Model Response
+Label: Record

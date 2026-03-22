@@ -3,6 +3,10 @@
 ## Task
 Tone Conversion (Cricket Commentary)
 
+
+## Why this is One-shot
+This prompt provides exactly one example and then asks the model to perform the same task on a new input.
+
 ## Prompt
 Convert the cricket commentary into a professional and formal tone.
 
@@ -14,5 +18,6 @@ Now do the same for:
 Input: This bowler is getting smashed everywhere, no control at all!
 Output:
 
-## Why this is One-shot
-This prompt provides exactly one example and then asks the model to perform the same task on a new input.
+## Model Response
+The bowler is proving expensive, struggling considerably to
+maintain accuracy and control.

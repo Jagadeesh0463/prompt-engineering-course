@@ -3,6 +3,9 @@
 ## Task
 Sentiment Classification (Cricket)
 
+## Why this is Few-shot
+This prompt provides multiple consistent examples before asking the model to classify a new input.
+
 ## Prompt
 Classify the sentiment of the cricket comment as Positive, Negative, or Neutral.
 
@@ -21,5 +24,5 @@ Sentiment: Positive
 Comment: The batting was strong, but the bowling performance was disappointing.
 Sentiment:
 
-## Why this is Few-shot
-This prompt provides multiple consistent examples before asking the model to classify a new input.
+## Model Response
+Neutral
