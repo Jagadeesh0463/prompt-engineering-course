@@ -1,31 +1,15 @@
-# ------------------------------
-# Python Virtual Environment
-# ------------------------------
-# Ignore virtual environment folders
-.venv/
-venv/
+# Python artifacts
+**/__pycache__/
+**/*.pyc
 
-# ------------------------------
-# Environment Variables
-# ------------------------------
-# Contains API keys and sensitive data
-.env
+# Virtual environments
+**/.venv/
 
-# ------------------------------
-# Python Cache Files
-# ------------------------------
-# Compiled Python files and cache
-__pycache__/
-*.pyc
+# Environment configuration (sensitive)
+**/.env
 
-# ------------------------------
-# System Files
-# ------------------------------
-# macOS system file
-.DS_Store
+# Internal / non-shareable files
+**/teacher_notes.md
 
-# ------------------------------
-# Project-specific Files
-# ------------------------------
-# Notes or files not needed in repo
-teacher_notes.md
+# OS metadata
+**/.DS_Store

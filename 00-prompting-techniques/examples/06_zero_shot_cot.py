@@ -1,20 +1,23 @@
 """
 Module 06 — Zero-shot Chain-of-Thought Prompting
 Task: Cricket academy savings and planning problem
+Zero-shot CoT = No examples given. Model is triggered to reason step by step
+                using only the phrase "Solve this step by step".
 """
+
 import sys
 from pathlib import Path
 
-# allow importing from project root
+# Allows importing helper.py from project root,
+# regardless of where this script is run from
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from helper import get_completion
 
-# I want the model to reason on its own without any examples
-# Just giving it a real-life situation and asking it to think step by step
 prompt = """
 Ravi is a cricket coach running a small academy in Hyderabad.
 He earns ₹95,000 per month from coaching fees.
+
 His monthly expenses are:
 - Ground rent: ₹15,000
 - Equipment maintenance: ₹8,000
@@ -38,6 +41,7 @@ response = get_completion(prompt)
 print("Prompt:")
 print("-" * 50)
 print(prompt)
+
 print("\nResponse:")
 print("-" * 50)
 print(response)

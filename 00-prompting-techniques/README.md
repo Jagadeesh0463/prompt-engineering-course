@@ -1,145 +1,191 @@
-# 🚀 Prompting Techniques Foundation
+# 🚀 Prompt Engineering Course — Foundation
 
-This project contains simple, beginner-friendly examples to learn core prompting techniques using Python and AI APIs.
+A structured, hands-on repository to learn prompt engineering from basics to advanced guardrail-based workflows using Python and AI models.
 
-It demonstrates how different prompting styles (zero-shot, one-shot, few-shot, etc.) help control and improve AI responses.
+This project is designed to help you understand how to design, control, and evaluate prompts for real-world applications.
+
+---
+
+## 📌 Overview
+
+This repository demonstrates:
+
+* Core prompting techniques (zero-shot to few-shot)
+* Reasoning patterns (Chain-of-Thought)
+* Structured prompting and role-based control
+* Guardrails for safety, reliability, and control
+* Real-world enterprise-style use cases
+
+The examples progress from simple concepts to advanced prompt workflows used in production systems.
 
 ---
 
 ## 📚 Topics Covered
 
+### Core Prompting Techniques
+
 * Zero-shot prompting
 * One-shot prompting
 * Few-shot prompting
 * Multi-shot prompting
+
+### Reasoning Techniques
+
 * Chain-of-Thought prompting
-* Zero-shot Chain-of-Thought prompting
+* Zero-shot Chain-of-Thought
+
+### Structured Prompting
+
+* System vs user role prompting
+* Prompt structuring basics
+* JSON and structured output prompting
+* Prompt design patterns
+* Prompt tuning vs instruction tuning
+
+### Guardrails & Safety
+
+* Instruction guardrails
+* Scope guardrails
+* Safety guardrails
+* Behavior guardrails
+* Output format guardrails
+* Fallback handling
+* Input guardrails
+* Output validation
+* Application-level guardrails
+* Escalation handling
+* Privacy protection
+* Tool/action constraints
+
+### Advanced Workflows
+
+* Combined guardrail workflows
+* Bias, fairness, and ethical risks
+* Behavior control
+* Safe prompt workflows with constraints
 
 ---
 
 ## 📁 Project Structure
 
+```id="v8e7kw"
 prompt-engineering-course/
-
 │
-├── examples/               # Runnable Python files
-├── prompts/                # Concept explanation files
-├── assignments/            # Assignment instructions
-├── helper.py               # API helper function
-├── requirements.txt        # Required Python libraries
-├── .env                    # API key (not pushed to GitHub)
-└── .gitignore              # Ignored files
+├── examples/        # 01–17 structured examples (basic → advanced guardrails)
+├── prompts/         # Concept explanations and prompt templates
+├── assignments/     # Practical tasks and solutions
+├── helper.py        # API interaction helper
+├── requirements.txt # Project dependencies
+├── .env             # Environment variables (not committed)
+└── .gitignore       # Ignored files configuration
+```
+
+---
+
+## 📈 Learning Progression
+
+The repository follows a structured progression:
+
+1. Basic prompting techniques
+2. Reasoning and structured prompting
+3. Guardrails and safety controls
+4. Advanced workflows and enterprise use cases
+
+This helps in building a strong foundation step-by-step.
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Create Virtual Environment
+### 1. Create Virtual Environment
 
+```bash id="6hp5x7"
 python3 -m venv venv
-
-Activate it:
-
 source venv/bin/activate
+```
 
 ---
 
-### 2️⃣ Install Dependencies
+### 2. Install Dependencies
 
-Install all required Python libraries using:
-
+```bash id="v8s6v3"
 pip install -r requirements.txt
+```
 
 ---
 
-## 📦 requirements.txt Explained
+### 3. Configure Environment Variables
 
-The `requirements.txt` file contains all the Python packages needed to run this project.
+Create a `.env` file in the root directory:
 
-### Why it is important
-
-* Ensures all users install the same dependencies
-* Makes project setup quick and easy
-* Avoids compatibility issues
-
-### Example packages used
-
-* python-dotenv → to load environment variables
-* openai / google-generativeai → to interact with AI models
-
----
-
-### 3️⃣ Create .env File
-
-Create a file named `.env` in the root folder and add:
-
+```id="h6k2jn"
 GEMINI_API_KEY=your_api_key_here
+```
+
+> ⚠️ Do not commit this file to GitHub
 
 ---
 
-### 4️⃣ Run the Code
+### 4. Run Examples
 
 Run any example file:
 
+```bash id="yq2v91"
 python examples/01_zero_shot.py
+```
 
-You can also try:
-
-python examples/02_one_shot.py
-python examples/03_few_shot.py
-python examples/04_multi_shot.py
-python examples/05_chain_of_thought.py
-python examples/06_zero_shot_cot.py
+You can explore all examples sequentially to understand the progression.
 
 ---
 
-## 📦 .gitignore Explained
+## 🧪 Assignments
 
-The `.gitignore` file is used to prevent unnecessary or sensitive files from being uploaded to GitHub.
+The `assignments/` folder contains practical exercises focused on:
 
-### Ignored Files:
+* Guardrails implementation
+* Bias and fairness handling
+* Behavior control
+* Structured outputs
+* Enterprise-style use cases
 
-* `.venv/` or `venv/` → Virtual environment
-* `.env` → Contains API keys (keep private 🔒)
-* `__pycache__/` → Python cache files
-* `*.pyc` → Compiled Python files
-* `.DS_Store` → macOS system file
-* `teacher_notes.md` → Personal notes
-
-👉 This keeps the repository clean and secure.
+These are designed to reinforce learning through real-world scenarios.
 
 ---
 
-## 🧠 What You Will Learn
+## 🔐 Security & Best Practices
 
-* How to write effective prompts
-* Difference between zero-shot, one-shot, and few-shot
-* How examples influence AI output
-* How to guide reasoning using chain-of-thought
-* Real-world use cases using cricket-based examples
-
----
-
-## 🏏 Special Note
-
-This project uses cricket-based examples to make learning more engaging and relatable.
+* Never commit `.env` files (contains secrets)
+* Use virtual environments for dependency isolation
+* Keep `.gitignore` properly configured
+* Avoid exposing sensitive data in prompts
+* Validate model outputs in critical workflows
 
 ---
 
-## ⚠️ Important Notes
+## 🧩 Notes
 
-* Do NOT upload your `.env` file to GitHub
-* Always activate virtual environment before running code
-* Ensure your API key is valid
+* Code is intentionally simple and readable
+* Focus is on learning prompt design, not framework complexity
+* Suitable for beginners and intermediate developers
 
 ---
 
-## 🙌 Conclusion
+## 📌 Future Improvements
 
-This project helps beginners understand how prompting works in AI systems and how to control outputs effectively using structured instructions.
+* Add evaluation and benchmarking examples
+* Support multiple LLM providers (Ollama, OpenAI, etc.)
+* Add real-world production workflows
 
 ---
 
 ## 👨‍💻 Author
 
-Jagadeesh S
+**Jagadeesh S**
+
+---
+
+## ⭐ Summary
+
+This project provides a complete foundation in prompt engineering — from basic prompting techniques to advanced guardrail-based workflows.
+
+It is designed to help developers build reliable, safe, and structured AI-powered applications.

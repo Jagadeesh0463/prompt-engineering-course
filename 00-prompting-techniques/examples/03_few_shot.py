@@ -1,11 +1,14 @@
 """
 Module 03 — Few-shot Prompting
 Task: Classify cricket-related sentiment
+Few-shot = Multiple examples given to teach the model the pattern before the real task.
 """
+
 import sys
 from pathlib import Path
 
-# allow importing from project root
+# Allows importing helper.py from project root,
+# regardless of where this script is run from
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from helper import get_completion
@@ -34,6 +37,7 @@ response = get_completion(prompt)
 print("Prompt:")
 print("-" * 50)
 print(prompt)
+
 print("\nResponse:")
 print("-" * 50)
 print(response)

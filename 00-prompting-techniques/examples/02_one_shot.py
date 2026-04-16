@@ -1,12 +1,14 @@
 """
 Assignment 02 — One-shot Prompting
 Task: Convert cricket commentary into professional tone
+One-shot = One example given to guide the model's output style.
 """
 
 import sys
 from pathlib import Path
 
-# allow importing from project root
+# Allows importing helper.py from project root,
+# regardless of where this script is run from
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from helper import get_completion
