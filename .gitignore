@@ -1,7 +1,15 @@
-**/.venv/
-**/.env
+# Python artifacts
 **/__pycache__/
 **/*.pyc
+
+# Virtual environments
+**/.venv/
+
+# Environment configuration (sensitive)
+**/.env
+
+# Internal / non-shareable files
 **/teacher_notes.md
-**/.DS_Store00-prompting-techniques/assignments/
-00-prompting-techniques/assignments/
+
+# OS metadata
+**/.DS_Store
